@@ -8,15 +8,14 @@
   "license": "MIT",
   "scripts": {
     "build:mlysl": "gulp -f packages/components/script/build/gulpfile.ts",
-    "publish:mlysl": "pnpm run --filter ./packages/components/mlysl-ui release",
+    "publish:kitty": "gulp -f packages/components/script/publish/gulpfile.ts",
     "docs:dev": "pnpm run --filter ./site docs:dev",
     "docs:build": "pnpm run --filter ./site docs:build",
     "docs:serve": "pnpm run --filter ./site docs:serve",
     "exm:dev": "pnpm run --filter ./examples dev",
     "test": "pnpm run --filter ./packages/components test",
     "coverage": "pnpm run --filter ./packages/components coverage",
-    "prettier": "prettier --write .",
-    "git": "git add . && git cz"
+    "prettier": "prettier --write ."
   },
   "type": "module",
   "devDependencies": {
@@ -32,7 +31,6 @@
     "c8": "^7.12.0",
     "cpy": "^9.0.1",
     "cross-env": "^7.0.3",
-    "cz-customizable": "^7.0.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
     "fast-glob": "^3.2.11",
@@ -51,10 +49,5 @@
     "vite-plugin-libcss": "^1.0.5",
     "vitest": "^0.21.1",
     "vue": "^3.2.36"
-  },
-  "config": {
-    "commitizen": {
-      "path": "node_modules/cz-customizable"
-    }
   }
 }
