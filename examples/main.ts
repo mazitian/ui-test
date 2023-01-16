@@ -1,5 +1,7 @@
-import { createApp } from 'vue'
-import App from './app.vue'
-import 'mlysl-ui/es/style.css'
-const app = createApp(App)
-app.mount('#app')
+import { createApp } from "vue";
+import App from "./app.vue";
+const app = createApp(App);
+import mlyslui from "mlysl-ui";
+app.use(mlyslui);
+
+app.mount("#app");

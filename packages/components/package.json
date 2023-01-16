@@ -1,20 +1,11 @@
 {
   "name": "mlysl-ui",
   "version": "1.0.0",
-  "description": "",
   "main": "index.ts",
-  "module": "es/index.js",
   "scripts": {
     "build": "vite build",
-    "prepare": "husky install",
-    "pre-commit": "lint-staged",
-    "postinstallmac": "git config core.hooksPath .husky && chmod 700 .husky/*",
-    "eslint": "eslint --cache --max-warnings 0  \"{src,mock}/**/*.{vue,ts,js,tsx}\" --fix",
-    "commit": "git add . && git-cz",
-    "prettier": "prettier --write .",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
-    "web-norm": "web-norm"
+    "coverage": "vitest run --coverage"
   },
   "files": [
     "es",
@@ -26,47 +17,9 @@
   ],
   "author": "mlysl",
   "license": "MIT",
-  "dependencies": {
-    "@mlysl-ui/utils": "workspace:^1.0.0"
-  },
+  "description": "",
   "typings": "lib/index.d.ts",
-  "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-angular": "^17.0.3",
-    "@commitlint/cz-commitlint": "^17.0.3",
-    "@typescript-eslint/eslint-plugin": "^5.48.1",
-    "@typescript-eslint/parser": "^5.48.1",
-    "@vue/test-utils": "2.0.2",
-    "commitizen": "^4.2.4",
-    "cz-customizable": "^6.9.0",
-    "eslint": "^7.25.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-friendly-formatter": "^4.0.1",
-    "eslint-plugin-html": "^6.2.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-vue": "^9.9.0",
-    "happy-dom": "6.0.4",
-    "husky": "^8.0.1",
-    "inquirer": "^8.0.0",
-    "lint-staged": "^12.5.0",
-    "prettier": "^2.7.1",
-    "vitest": "0.21.1"
-  },
-  "lint-staged": {
-    "*.{js,ts,vue,jsx,tsx}": [
-      "npm run eslint",
-      "eslint --cache --ext .js"
-    ],
-    "*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "dependencies": {
+    "@mlysl-ui/utils": "workspace:2.0.4"
   }
 }

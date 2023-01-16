@@ -1,3 +1,3 @@
-import { default as MlButton } from './button'
-export { MlButton }
-export default [MlButton]
+import { default as Button } from './button'
+export { Button }
+export default [Button]

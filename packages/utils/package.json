@@ -1,12 +1,16 @@
 {
   "name": "@mlysl-ui/utils",
-  "version": "1.0.0",
+  "version": "2.0.4",
+  "main": "./index.ts",
+  "module": "./index.ts",
   "description": "",
-  "main": "index.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
+  "files": [
+    "dist"
+  ],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "build": "vite build"
+  }
 }
